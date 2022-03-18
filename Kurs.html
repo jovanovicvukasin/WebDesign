@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Power courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/stil.css">
+  <script src="js/kurs.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/path/to/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="Pocetna.html"><img src="powerFinal.png" style="width: 200px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="registracijaId" href="#registerModal" style="margin-top: 5%;">REGISTRACIJA</a></li>
+        <li><a id="loginId" href="#loginModal" style="margin-top: 10%;">LOGIN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="cover1.jpg" class="img-responsive" style="width:100%">
+        <div class="carousel-caption">
+            <img class="imgKurs" id="imgKurs1"></br></br>
+            <form id="oneKurs">
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Naziv</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="nazivId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">ID</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="idid"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Autor</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="autorId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Izmena</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="izmenaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Opis</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="opisId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Cena</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="cenaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Br. lekcija</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="brLekcijaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Kategorija</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="kategorijaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Jezik</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="jezikId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Ocena</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="ocenaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Br. korisnika</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="brKorisnikaId"></label>
+                    </div>
+
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Sertifikovan</label>
+                    <div class="col-sm-10">
+                      <label type="email" class="form-control" id="sertifikovanId"></label>
+                    </div>
+                  </div>
+              </form>
+      </div>      
+    </div>
+</div>
+
+
+<!-- MODAL PRIKAZ LOGINa  -->
+<div id="modalLogin" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+        <div class="form-group">
+              <label for="usrname">Korisnicko ime:</label>
+              <input type="text" class="form-control" id="korisnickoImeModallogin" placeholder="Unesite korisnicko ime">
+            </div>
+            <div class="form-group">
+              <label for="psw">Lozinka:</label>
+              <input type="password" class="form-control" id="lozinkaModallogin" placeholder="Unesite lozinku">
+            </div>
+            <div>
+              <label id="message"></label>
+
+            </div>
+            <button id="loginBtn" type="submit" class="btn btn-default" style="margin-left: 50%;">Login</button>
+        </form>
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- MODAL PRIKAZ REGISTRACIJE KORISNIKA -->
+<div id="modalRegistracija" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">REGISTRACIJA</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="usrname">Korisnicko ime:</label>
+            <input type="text" class="form-control" id="korisnickoImeModal" placeholder="Unesite korisnicko ime">
+          </div>
+          <div class="form-group">
+            <label for="psw">Lozinka:</label>
+            <input type="password" class="form-control" id="lozinkaModal" placeholder="Unesite lozinku">
+          </div>
+          <div class="form-group">
+            <label for="usrname">E-mail:</label>
+            <input type="text" class="form-control" id="emailModal" placeholder="Unesite e-mail">
+          </div>
+          <div class="form-group">
+            <label for="usrname">Ime:</label>
+            <input type="text" class="form-control" id="imeModal" placeholder="Unesite ime">
+          </div>
+          <div class="form-group">
+            <label for="usrname">Prezime:</label>
+            <input type="text" class="form-control" id="prezimeModal" placeholder="Unesite prezime">
+          </div>
+          <div class="form-group">
+            <label for="usrname">Datum rodjenja:</label>
+              <div class='input-group date'>
+                  <input type='date' class="form-control" id='datumRodjenjaModal'/>
+                         <span class="input-group-addon">
+                               <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+              </div>
+          <div class="form-group">
+            <label for="usrname">Adresa:</label>
+            <input type="text" class="form-control" id="adresaModal" placeholder="Unesite adresu stanovanja">
+          </div>
+          <div class="form-group">
+            <label for="usrname">Broj telefona:</label>
+            <input type="text" class="form-control" id="brojTelefonaModal" placeholder="Unesite broj telefona">
+            <label id="message1"></label>
+          </div>
+            <button id="registracijaBtn" type="submit" class="btn btn-default" style="margin-left: 50%;">Potvrdi</button>
+        </form>
+            </div>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="text-center">
+  <p>Power courses <a href="https://www.power-courses.com" data-toggle="tooltip" title="Visit w3schools"> www.power-courses.com</a></p> 
+</footer>
+
+</body>
+</html>

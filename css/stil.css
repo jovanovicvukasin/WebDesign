@@ -1,0 +1,183 @@
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+ 
+  
+  .nav-tabs li a {
+    color: #777;
+  }
+
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #181717;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand, .button { 
+    color: #fff !important;
+    
+  }
+  .navbar-nav li a:hover {
+    color: #ff0000 !important;
+  }
+ 
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  
+  footer {
+    background-color: #fff;
+    color: #000000;
+    padding: 32px;
+  }
+  footer a {
+    color: #000000;
+  }
+  footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+
+  .thead-dark{
+    background-color: #181717;
+    color: #fff;
+    border-top: 2px solid #ff0000;
+  }
+
+  .linkTable{
+    color: #181717;
+  }
+
+  .linkTable:hover{
+    color: #ff0000;
+    text-decoration: none;
+  }
+
+  td{
+    color: #181717;
+  }
+
+  .imgTable{
+    height: 100px;
+    width: 100px;
+    border-right: 2px solid #ff0000;
+  }
+
+  .carousel-caption{
+    background-color: rgba(255, 255, 255, 30%);
+    color: #181717;
+    padding: 100px 100px;
+    border: 2px solid #ff0000;
+  }
+
+  .imgKurs{
+    height: 150px;
+    width: 200px;
+    border: 2px solid #ff0000;
+  }
+
+  .jumbotron {
+    background-color: #181717;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Lato, sans-serif;
+  }
+
+  .forma{
+    background-color: rgba(255, 255, 255, 30%);
+    color: #181717;
+    padding: 100px 100px;
+    border: 2px solid #ff0000;
+  }
+
+  .btn{
+    color: #fff;
+    border: 2px solid #ff0000;
+    background-color: #181717;
+  }
+
+  .btn:focus{
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+    color: #fff;
+  }
+
+  input:focus{
+    border: 2px solid #ff0000;
+  }
+
+  input:hover{
+    border: 2px solid #ff0000;
+  }
+
+  select:hover{
+    border: 2px solid #ff0000;
+
+  }
+
+  .nesto{
+    background-color: #181717;
+    height: 250px;
+  }
+
+  .nesto2{
+    background-color: #181717;
+    height: 300px;
+  }
+
+  .izmenaDugme{
+    color: #fff;
+    border: 2px solid #ff0000;
+    background-color: #181717;
+    font-family: Lato, sans-serif;
+  }
+
+  .izmenaDugme:focus{
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+    color: #fff;
+
+  }
+
+
+
+  .modal-header{
+    background-color: #181717;
+    color: #fff;
+    text-align: center;
+  }
+
+  .modal-title{
+    color: #fff;
+    font-family: Lato, sans-serif;
+    text-align: center;
+
+  }
+
+  .pretragaKursa{
+    background-color: #181717;
+    color: #fff;
+    text-align: center;
+    border-top: 2px solid #ff0000;;
+  }
+  

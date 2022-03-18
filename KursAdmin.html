@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Power courses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/stil.css">
+  <script src="js/kursAdmin.js"></script>
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/path/to/bootstrap/js/bootstrap.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="Pocetna.html"><img src="powerFinal.png" style="width: 200px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-center">
+            <li><a href="Administrator.html" style="margin-top: 5%;">NAZAD</a></li>
+          </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#loginModal" style="margin-top: 5%;">LOGOUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <div class="forma">
+        <img class="imgKurs"  id="imgKurs1"></br></br>
+    <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Naziv</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="nazivId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">ID</label>
+                <div class="col-sm-10">
+                  <input readonly type="email" class="form-control" id="idid">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Autor</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="autorId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Izmena</label>
+                <div class="col-sm-10">
+                    <div class='input-group date' style="width: 100%">
+                        <input type='date' class="form-control" id='izmenaId'/>
+                    </div>
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Opis</label>
+                <div class="col-sm-10">
+                  <input type="textarea" class="form-control" id="opisId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Cena</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="cenaId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Br. lekcija</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="brLekcijaId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Kategorija</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="kategorijaId" style="width: 100%">
+                        <option value="Web programiranje" selected>Web programiranje</option>
+                        <option value="Objektno programiranje" selected>Objektno programiranje</option>
+                        <option value="Algoritmi" selected>Algoritmi</option>
+                        <option value="Strukture podataka" selected>Strukture podataka</option>
+                    </select>
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Jezik</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="jezikId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Ocena</label>
+                <div class="col-sm-10">
+                  <input readonly type="email" class="form-control" id="ocenaId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Br. korisnika</label>
+                <div class="col-sm-10">
+                  <input readonly type="email" class="form-control" id="brKorisnikaId">
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Sertifikovan</label>
+                <div class="col-sm-10">
+                <select class="form-control" id="sertifikovanId" style="width: 100%">
+                    <option value="da" selected>DA</option>
+                    <option value="ne" selected>NE</option>
+                </select>
+                </div>
+              </div>
+              <div>
+                <label id="message"></label>
+
+              </div>
+
+              <button type="button" class="btn btn-outline-secondary" id="izmeniBtn">IZMENI</button>
+              <button type="button" class="btn btn-outline-secondary" id="obrisiBtn">OBRISI</button>
+
+
+          
+    </form>
+
+    </div>
+  </div>
+
+  <!-- MODAL PRIKAZ Obavestenja  -->
+<div id="modalObavestenje" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Obavestenje o izmeni</h4>
+      </div>
+      <div class="modal-body">
+          <label style="margin-left: 37%;">Uspesno izmenjen kurs!</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalObavestenje1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Obavestenje o brisanju</h4>
+        </div>
+        <div class="modal-body">
+          <label style="margin-left: 30%;">Da li ste sigurni da zelite obrisati kurs?</label>
+          <form>
+            <button style="margin-left: 47%;" type="button" class="btn btn-outline-secondary" id="daBtn">DA</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="modalObavestenje2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Obavestenje o brisanju</h4>
+          </div>
+          <div class="modal-body">
+              <label style="margin-left: 37%;">Uspesno obrisan kurs!</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <p>Power courses <a href="https://www.power-courses.com" data-toggle="tooltip" title="Visit w3schools"> www.power-courses.com</a></p> 
+</footer>
+
+</body>
+</html>
